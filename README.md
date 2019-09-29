@@ -4,4 +4,4 @@
 
 ## A simple navigation menu
 
-- Dependency `simple-ddm` for JS
+- Dependency `simple-ddm` for JS [git](https://github.com/igorashs/simple-drop-down-menu)
