@@ -1,0 +1,18 @@
+{
+  "name": "responsive-nav-bar-1",
+  "version": "1.0.0",
+  "description": "Responsive Nav-bar menu-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "igorash",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "simple-ddm": "^1.2.0"
+  }
+}

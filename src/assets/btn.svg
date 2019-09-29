@@ -1,0 +1,7 @@
+<svg width="30" height="30" viewBox="0 0 30 30">
+ <g fill="#fff">
+  <rect y="0" width="30" height="8" ry="4"/>
+  <rect y="11" width="30" height="8" ry="4"/>
+  <rect y="22" width="30" height="8" ry="4"/>
+ </g>
+</svg>
