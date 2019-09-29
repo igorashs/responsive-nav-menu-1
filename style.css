@@ -1,0 +1,127 @@
+/* +global */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+
+ul {
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 8rem;
+  background: #3b5998;
+}
+
+.logo {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.nav {
+  height: 8rem;
+  margin: 0 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -60%;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background: #04112fc4;
+  transition: all 512ms;
+}
+
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  font-size: 4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-item {
+  font-size: 2.2rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::before,
+.active::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  left: -100%;
+  background-color: #5f75a5;
+  transition: all 512ms;
+}
+
+.active::before {
+  left: 0%;
+}
+
+.nav-item:hover::before {
+  left: 0%;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-list.show-menu {
+  right: 0;
+}
+
+.btn-menu {
+  cursor: pointer;
+}
+
+@media (min-width: 730px) {
+  .nav-list {
+    flex-direction: row;
+    position: initial;
+    width: initial;
+    background: none;
+  }
+
+  .nav-item {
+    margin: 0 1rem;
+  }
+
+  .btn-menu,
+  .btn-close {
+    display: none;
+  }
+}
