@@ -114,6 +114,7 @@ header {
     position: initial;
     width: initial;
     background: none;
+    transition: initial;
   }
 
   .nav-item {
